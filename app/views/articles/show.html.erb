@@ -12,3 +12,9 @@
     turbo_method: :get
   } %></li>
 </ul>
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form', article: @article%>
