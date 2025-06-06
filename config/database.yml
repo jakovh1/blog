@@ -83,4 +83,8 @@ production:
     url: <%= ENV["DATABASE_URL"] %>
   cable:
     <<: *primary_production
+  queue:
+    url: <%= ENV["DATABASE_URL"] %>
+  
+  
     
